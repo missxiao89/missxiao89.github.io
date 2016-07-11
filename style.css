@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?lo393q');
+    src:    url('fonts/icomoon.eot?lo393q#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?lo393q') format('truetype'),
+        url('fonts/icomoon.woff?lo393q') format('woff'),
+        url('fonts/icomoon.svg?lo393q#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wechat:before {
+    content: "\e900";
+}
+.icon-envelop:before {
+    content: "\e945";
+}
+.icon-mobile:before {
+    content: "\e958";
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -8,9 +44,62 @@ a{
 ul,li{
 	list-style: none;
 }
-
+.section{
+	background: url(img/bg.jpg) repeat;
+}
 .container{
 	width:900px;
 	height: 600px;
-	background: #ccc; 
+	margin:0 auto;
+	position: relative; 
 }
+.left-part{
+	width: 30%;
+	height: 70%;
+	background: blue;
+	position: absolute;
+	top:0;left: 0;
+}
+.pic{
+	width: 80%;
+	height: 60%;
+	background:green;
+}
+.right-part{
+	width: 65%;
+	height: 70%;
+	background: pink;
+	position: absolute;
+	top: 0;right: 0;
+}
+
+.title{
+	width: 80%;
+	height: 10%;
+	background: red;
+	margin: 0 auto;
+	text-align: center;
+}
+.content{
+	width: 90%;
+	height: 60%;
+	margin: 0 auto;
+	background: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
